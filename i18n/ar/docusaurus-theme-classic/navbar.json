@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Bigcapital",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.FAQs": {
+    "message": "FAQs",
+    "description": "Navbar item with label FAQs"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}
