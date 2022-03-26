@@ -11,7 +11,7 @@ const config = {
     'Learn the skills to build your business using Bigcapital accounting software.',
   url: 'https://docs.bigcapital.ly',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon-32x32.png',
   organizationName: 'facebook', // Usually your GitHub org/user name.
@@ -83,8 +83,8 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'localeDropdown',
-            position: 'right'
-          }
+            position: 'right',
+          },
         ],
       },
       footer: {
