@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Invoices": {
-    "message": "Invoices",
+    "message": "فواتير البيع",
     "description": "The label for category Invoices in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
