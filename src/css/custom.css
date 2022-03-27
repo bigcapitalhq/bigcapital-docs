@@ -36,7 +36,7 @@
 }
 
 [lang='ar'] .markdown h1:first-child{  
-  --ifm-h1-font-size: 2.5rem;
+  --ifm-h1-font-size: 2.25rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
