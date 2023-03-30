@@ -108,7 +108,7 @@ const config = {
             items: [
               {
                 label: 'Facebook',
-                href: 'https://facebook/bigcapitalHQ',
+                href: 'https://facebook.com/bigcapitalHQ',
               },
               {
                 label: 'Twitter',
