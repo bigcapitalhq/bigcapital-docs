@@ -75,14 +75,20 @@ Get the container ID by listing all containers `docker ps -a | grep bigcapital-d
 
 ### Upgrading
 
-First we need just to pull latest version of images of docker-compose file
+First we need just to pull latest version of the project, might be some changes on the docker-compose files.
+
+```
+git pull origin main
+```
+
+Now we are going to pull the latest images from regsitry by doing.
 
 ```
 docker-compose --file docker-compose.prod.yml pull
 ```
 
-and start using them again.
+and start build and using them again.
 
 ```
-docker-compose --file docker-compose.prod.yml up -d
+docker-compose --file docker-compose.prod.yml up --build -d
 ```
