@@ -10,7 +10,7 @@ This document describes ways to restrict users from signing up on your self-host
 
 The environment variable `SIGNUP_DISABLED` should be set to `true` to disable the signing up of new users. When set, the following facts hold:
 
-- The Register link in Login page will disappear but you can access to the page directly through `/auth/register` url and the page will show up but when sign-up the page will throw an error.
+- The **Register link** in Login page will disappear but you can access to the page directly through `/auth/register` url and the page will show up but when sign-up the form will throw an error.
 - **Uninvited users** cannot sign-up using the signup form.
 - **Invited users** can still signup using the signup form.
 
@@ -43,7 +43,7 @@ SIGNUP_ALLOWED_DOMAINS=bigcapital.ly,self-hosted.com
 
 ## Email addresses white-list
 
-The environment variable `SIGNUP_ALLOWED_EMAILS` can be set to a comma-separated list of email addresses, that is always allowed to sign up, irrespective of the above two environment variables.
+The environment variable `SIGNUP_ALLOWED_EMAILS` can be set to a comma-separated list of email addresses, that is always allowed to sign up, irrespective of the above environment variable.
 
 :::info
 
