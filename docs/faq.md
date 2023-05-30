@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Installation - FAQs
 
-### Can I install SigNoz without Docker?
+### Can I install Bigcapital without Docker?
 
 No, it is not supported as of today.
 
