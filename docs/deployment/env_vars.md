@@ -36,8 +36,8 @@ Following environment variables related to the system database.
 
 Following environment variables related to the tenant databases.
 
-| Variable                      | Description |
-| ----------------------------- | ------------- |
+| Variable                      | Description
+| ----------------------------- | ---------------------------------------------------
 | **TENANT_DB_NAME_PERFIX**     | The prefix name of the **tenant databases** e.g. if the prefix name is `bigcapital_` the created tenant database at the runtime wil be `bigcapital_123123` with unique organization id. 
 | **TENANT_DB_HOST**            | The hostname or IP address of the **tenants database** server.
 | **TENANT_DB_USER**            | The port number of the **tenants database** server where the database service is running.
@@ -52,8 +52,8 @@ Following environment variables is mutual variables between system and tenant da
 If you have set the environment variable `DB_USER=bigcapital` and `SYSTEM_DB_USER=acme`, the value of `DB_USER` will be deprecated and the system's database user will be "**acme**". Similarly, if you have defined `TENANT_DB_NAME=acme`, the tenant databases will default to "**bigcapital**" until a value set to `TENANT_DB_NAME`.
 :::
 
-| Variable              | Description |
-| --------------------- | ------------- |
+| Variable              | Description
+| --------------------- | -------------------------------------------------------------------------------
 | **DB_HOST**           | The hostname or IP address of the **system and tenant databases** server.
 | **DB_USER**           | The port number of the **system and tenant databases** server where the database service is running.
 | **DB_PASSWORD**       | The password associated with the `DB_PASSWORD` for authentication.
@@ -61,9 +61,9 @@ If you have set the environment variable `DB_USER=bigcapital` and `SYSTEM_DB_USE
 
 ### Application
 
-| Variable           | Description |
-| ------------------ | ------------- |
-| **JWT_SECRET**     | should be a strong, random, and unique value to enhance the security |
+| Variable           | Description
+| ------------------ | ------------------------------------------------------------------------------
+| **JWT_SECRET**     | Should be a strong, random, and unique value to enhance the security.
 
 ### Signup Restrictions
 
