@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Environments Variables
+# Environment Variables
 
 Bigcaptial requires the following environment variables to be configured:
 
