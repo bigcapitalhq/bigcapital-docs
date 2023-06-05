@@ -75,12 +75,12 @@ const config = {
             label: 'Docs',
           },
           {
-            type: 'doc',
+            
             docId: 'intro',
             position: 'left',
-            label: 'FAQs',
+            href: 'https://discord.com/invite/c8nPBJafeb',
+            label: 'Community',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -90,19 +90,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-              {
-                label: 'FAQs',
-                to: '/docs/faqs',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -125,8 +112,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Community',
+                href: 'https://discord.com/invite/c8nPBJafeb',
               },
             ],
           },
