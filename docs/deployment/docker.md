@@ -19,7 +19,7 @@ Before proceeding, make sure you have the latest version of docker and docker-co
 In a directory of your choosing, clone the Bigcapital repository and navigate into the `./bigcapital` directory by entering the following commands:
 
 ```
-git clone --depth 1 https://github.com/bigcapitalhq/bigcapital.git && cd ./bigcapital
+git clone --depth 1 -b main https://github.com/bigcapitalhq/bigcapital.git && cd ./bigcapital
 ```
 
 The most important files in the docker deployment the `docker-compose.prod.yml`, `.env.example` and `docker` folder, we're not going to build docker images of the application from scratch, but docker-compose already imports built images from Github Registry where our continuous-deployment push the new built images when we release new versions.
@@ -31,6 +31,10 @@ Change all mail variables to configure it with your mail server and the password
 ```
 cp .env.example .env && nano .env
 ```
+
+:::info
+The `.env.example` file contains all the necessary environment variable values, allowing you to begin using the application directly with these pre-configured settings. You also have the option to modify the values as needed.
+:::
 
 4. Get the services up and running.
 
