@@ -42,6 +42,17 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'user-guide',
+        path: 'user-guide',
+        routeBasePath: 'user-guide',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+  ],
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ar'],
@@ -75,7 +86,12 @@ const config = {
             label: 'Docs',
           },
           {
-            
+            to: '/user-guide/branches', // ./docs-api/Intro.md
+            label: 'User Guide',
+            position: 'left',
+            activeBaseRegex: `/user-guide/`,
+          },
+          {
             docId: 'intro',
             position: 'left',
             href: 'https://discord.com/invite/c8nPBJafeb',
