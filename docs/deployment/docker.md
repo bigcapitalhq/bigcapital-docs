@@ -120,7 +120,7 @@ docker-compose restart
 :::caution
 All environment variables of databases cannot be modified. This is because the initial user, username, password and database name have already been set up by the database. However, if it becomes necessary to change these credentials, you can access the MySQL container and execute SQL queries to modify the username, password, or even the system database name. Afterwards, you can update the corresponding values in the .env file to ensure they match the changes made.
 
-**Alternatively**, you can remove the MySQL volume by performing the following action.
+**Alternatively**, you can remove the MySQL volume by performing the following action, but that it will delete all your database data.
 
 *on production*
 ```
