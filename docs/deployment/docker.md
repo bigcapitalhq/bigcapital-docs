@@ -100,3 +100,35 @@ and start build and using them again.
 ```
 docker-compose --file docker-compose.prod.yml up --build -d
 ```
+
+### Changing `.env` values after running Docker containers
+
+Once the Docker containers are built and running, the application inside the container has already read the values from the .env file and is using them.
+If you need to change the environment variable values, you will have to stop and re-start the Bigcapital containers.
+
+If you were on **production**, use the following command.
+
+```
+docker-compose --file docker-compose.prod.yml restart
+```
+
+Or if you were on **development** mode.
+```
+docker-compose restart
+```
+
+:::caution
+All environment variables of databases cannot be modified. This is because the initial user, username, password and database name have already been set up by the database. However, if it becomes necessary to change these credentials, you can access the MySQL container and execute SQL queries to modify the username, password, or even the system database name. Afterwards, you can update the corresponding values in the .env file to ensure they match the changes made.
+
+**Alternatively**, you can remove the MySQL volume by performing the following action.
+
+*on production*
+```
+docker volume rm bigcapital_prod_mysql
+```
+
+*on development*
+```
+docker volume rm bigcapital_dev_mysql
+```
+:::
