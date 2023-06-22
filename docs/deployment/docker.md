@@ -45,10 +45,6 @@ docker-compose --file docker-compose.prod.yml up -d
 - `-f` and the path to your configuration file
 - `-d` to run containers in the background
 
-:::caution
-Before runing docker-compose, **ensure that your working directory is set to the project root directory `/bigcapital`**, as docker-compose relies on relative file paths.
-:::
-
 4. **Your Bigcapital installation is complete.** Please note that the containers are not exposed to the internet and they only bind to the localhost. You don't have to setup Nginx or any other proxy server to the requests, we're already set up Nginx container on docker-compose file as proxy server.
 
 Wait for all containers to be in running state, and then point your browser to `http://<IP-ADDRESS>:8000/` to access the application.
