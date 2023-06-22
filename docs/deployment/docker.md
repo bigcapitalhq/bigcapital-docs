@@ -24,7 +24,7 @@ git clone --depth 1 -b main https://github.com/bigcapitalhq/bigcapital.git && cd
 
 The most important files in the docker deployment the `docker-compose.prod.yml`, `.env.example` and `docker` folder, we're not going to build docker images of the application from scratch, but docker-compose already imports built images from Github Registry where our continuous-deployment push the new built images when we release new versions.
 
-3. Configure the `.env` file.
+2. Configure the `.env` file.
 
 Change all mail variables to configure it with your mail server and the password of databases.
 
@@ -36,7 +36,7 @@ cp .env.example .env && nano .env
 The `.env.example` file contains all the necessary environment variable values, allowing you to begin using the application directly with these pre-configured settings. You also have the option to modify the values as needed.
 :::
 
-4. Get the services up and running.
+3. Get the services up and running.
 
 ```
 docker-compose --file docker-compose.prod.yml up -d
@@ -49,9 +49,13 @@ docker-compose --file docker-compose.prod.yml up -d
 Before runing docker-compose, **ensure that your working directory is set to the project root directory `/bigcapital`**, as docker-compose relies on relative file paths.
 :::
 
-5. **Your Bigcapital installation is complete.** Please note that the containers are not exposed to the internet and they only bind to the localhost. You don't have to setup Nginx or any other proxy server to the requests, we're already set up Nginx container on docker-compose file as proxy server.
+4. **Your Bigcapital installation is complete.** Please note that the containers are not exposed to the internet and they only bind to the localhost. You don't have to setup Nginx or any other proxy server to the requests, we're already set up Nginx container on docker-compose file as proxy server.
 
 Wait for all containers to be in running state, and then point your browser to `http://<IP-ADDRESS>:8000/` to access the application.
+
+:::info
+Once the installation is done, you will have to create your first account. No default account is provided.
+:::
 
 ### Verify the Installation
 
