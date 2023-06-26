@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Landed cost
 
 The landed cost allows you to include additional costs (shipment, insurance, customs duties, etc.) into the original cost of the product to help you track the product cost more accurately.

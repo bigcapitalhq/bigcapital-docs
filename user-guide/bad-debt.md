@@ -1,4 +1,8 @@
-# Bad Debt
+---
+sidebar_position: 4
+---
+
+# Bad debt
 
 Bad debt refers to the amount of money owed to a customer that is unlikely to be repaid by the debtor. It arises when a borrower defaults on their payment obligations, typically due to financial hardship or unwillingness to pay.
 
