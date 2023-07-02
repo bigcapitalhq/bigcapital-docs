@@ -63,11 +63,6 @@ const config = {
         direction: 'ltr',
         htmlLang: 'en-US',
       },
-      ar: {
-        label: 'Arabic',
-        direction: 'rtl',
-        htmlLang: 'ar',
-      },
     },
   },
   themeConfig:
@@ -108,8 +103,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Facebook',
-                href: 'https://facebook.com/bigcapitalHQ',
+                label: 'Discord',
+                href: 'https://discord.com/invite/c8nPBJafeb',
               },
               {
                 label: 'Twitter',
@@ -119,15 +114,6 @@ const config = {
                 href: 'https://github.com/bigcapitalHQ',
                 label: 'GitHub',
                 position: 'right',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Community',
-                href: 'https://discord.com/invite/c8nPBJafeb',
               },
             ],
           },
