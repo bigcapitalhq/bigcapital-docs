@@ -26,16 +26,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./docsSidebar.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/bigcapitalhq/bigcapital-docs/tree/main/',
           routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/bigcapitalhq/bigcapital-docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,6 +47,7 @@ const config = {
         path: 'user-guide',
         routeBasePath: 'user-guide',
         sidebarPath: require.resolve('./sidebars.js'),
+        editUrl: 'https://github.com/bigcapitalhq/bigcapital-docs/tree/main/',
       },
     ],
   ],
