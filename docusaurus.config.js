@@ -29,6 +29,7 @@ const config = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
@@ -74,13 +75,10 @@ const config = {
     ({
       navbar: {
         title: 'Bigcapital',
-        // logo: {
-        // alt: 'My Site Logo',
-        // src: 'img/logo.svg',
-        // },
         items: [
           {
             type: 'doc',
+
             docId: 'intro',
             position: 'left',
             label: 'Docs',
