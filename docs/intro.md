@@ -11,4 +11,4 @@ This guide will help you to install and setup a production ready Bigcapital.
 
 ### Deployment
 
-- [Docker](/docs/deployment/docker)
+- [Docker](/deployment/docker)
