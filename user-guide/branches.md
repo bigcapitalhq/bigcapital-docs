@@ -35,7 +35,7 @@ After enabling **Branches** feature on your organization now we should create br
 
 - Click on **Save** to submit the changes.
 
-### Asign Transactions to Branches
+### Assign Transactions to Branches
 
 Once you've enabled the multiple branches feature all the next transactions should assign to an particular branch whether if you picked a branch or the default branch will be assgined.
 
