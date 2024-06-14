@@ -9,7 +9,7 @@ const config = {
   title: 'Bigcapital Learning Central',
   tagline:
     'Learn the skills to build your business using Bigcapital accounting software.',
-  url: 'https://docs.bigcapital.ly',
+  url: 'https://docs.bigcapital.app',
   baseUrl: '/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
